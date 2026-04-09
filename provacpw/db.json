@@ -1,0 +1,94 @@
+{
+  "refeicoes": [
+    {
+      "id": "1",
+      "dia": "Segunda-feira",
+      "periodo": "Manhã (07:00)",
+      "prato": "Pão com Manteiga e Café"
+    },
+    {
+      "id": "2",
+      "dia": "Segunda-feira",
+      "periodo": "Tarde (12:50)",
+      "prato": "Arroz, Feijão e Frango Assado"
+    },
+    {
+      "id": "3",
+      "dia": "Segunda-feira",
+      "periodo": "Noite (18:40)",
+      "prato": "Arroz, Feijão e Frango Assado"
+    },
+    {
+      "id": "4",
+      "dia": "Terça-feira",
+      "periodo": "Manhã (07:00)",
+      "prato": "Bolo de Cenoura e Leite"
+    },
+    {
+      "id": "5",
+      "dia": "Terça-feira",
+      "periodo": "Tarde (12:50)",
+      "prato": "Macarronada com Carne Moída"
+    },
+    {
+      "id": "6",
+      "dia": "Terça-feira",
+      "periodo": "Noite (18:40)",
+      "prato": "Macarronada com Carne Moída"
+    },
+    {
+      "id": "7",
+      "dia": "Quarta-feira",
+      "periodo": "Manhã (07:00)",
+      "prato": "Pão de Queijo e Suco de Laranja"
+    },
+    {
+      "id": "8",
+      "dia": "Quarta-feira",
+      "periodo": "Tarde (12:50)",
+      "prato": "Feijoada Completa"
+    },
+    {
+      "id": "9",
+      "dia": "Quarta-feira",
+      "periodo": "Noite (18:40)",
+      "prato": "Feijoada Completa"
+    },
+    {
+      "id": "10",
+      "dia": "Quinta-feira",
+      "periodo": "Manhã (07:00)",
+      "prato": "Biscoito Salgado e Chá"
+    },
+    {
+      "id": "11",
+      "dia": "Quinta-feira",
+      "periodo": "Tarde (12:50)",
+      "prato": "Arroz, Feijão e Bife"
+    },
+    {
+      "id": "12",
+      "dia": "Quinta-feira",
+      "periodo": "Noite (18:40)",
+      "prato": "Arroz, Feijão e Bife"
+    },
+    {
+      "id": "13",
+      "dia": "Sexta-feira",
+      "periodo": "Manhã (07:00)",
+      "prato": "Sanduíche Natural e Vitamina"
+    },
+    {
+      "id": "14",
+      "dia": "Sexta-feira",
+      "periodo": "Tarde (12:50)",
+      "prato": "Arroz, Feijão e Frango"
+    },
+    {
+      "id": "15",
+      "dia": "Sexta-feira",
+      "periodo": "Noite (18:40)",
+      "prato": "Arroz, Feijão e Frango"
+    }
+  ]
+}
