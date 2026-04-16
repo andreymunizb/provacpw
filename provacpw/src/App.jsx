@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import DetalhesRefeicao from './pages/DetalhesRefeicao';
 import Favoritos from './pages/Favoritos';
+import './style.scss';
 
 function App() {
   return (

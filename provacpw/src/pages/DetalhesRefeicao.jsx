@@ -5,7 +5,7 @@ export default function DetalhesRefeicao() {
 
   return (
     <div>
-      <h1>Detalhes da Refeição: {id}</h1>
+      <h1>favoritos{id}</h1>
       <Link to="/">
         <button></button>
       </Link>

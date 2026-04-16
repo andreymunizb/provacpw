@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function RefeicaoCard({ item }) {
   return (
-    <div>
-      <h3>{item.dia}</h3>
-      <p>
-        <strong>Principal:</strong> {item.prato}
-      </p>
-
+    <div className="refeicao-card">
+      <h3>{item.periodo}</h3>
+      
+      <p><strong>Principal:</strong> {item.prato}</p>
+      
       <Link to={`/refeicao/${item.id}`}>
-        <button>Ver cardápio completo</button>
+        favoritar
       </Link>
     </div>
   );
