@@ -4,7 +4,6 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 const RefeitorioContext = createContext();
 
 export function RefeitorioProvider({ children }) {
-  // Uso do Custom Hook obrigatório
   const [favoritos, setFavoritos] = useLocalStorage('ifms-favoritos', []);
 
   const alternarFavorito = (refeicao) => {

@@ -1,28 +1,29 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import DetalhesRefeicao from './pages/DetalhesRefeicao';
-import Favoritos from './pages/Favoritos';
-import './style.scss';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import DetalhesRefeicao from "./pages/DetalhesRefeicao";
+import Favoritos from "./pages/Favoritos";
+import { RefeitorioProvider } from "./context/RefeitorioContext";
+import "./style.scss";
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter>
-      <header>
-        <nav>
-          <Link to="/">Cardápio da Semana</Link>
-          <Link to="/favoritos">Meus Favoritos</Link>
-        </nav>
-      </header>
+    <RefeitorioProvider>
+      <BrowserRouter>
+        <header>
+          <nav className="main-nav">
+            <Link to="/">Cardápio da Semana</Link>
+            <Link to="/favoritos">Meus Favoritos</Link>
+          </nav>
+        </header>
 
-      <main style={{ padding: '20px' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/refeicao/:id" element={<DetalhesRefeicao />} />
-          <Route path="/favoritos" element={<Favoritos />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+        <main className="conteudo-principal">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/refeicao/:id" element={<DetalhesRefeicao />} />
+            <Route path="/favoritos" element={<Favoritos />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </RefeitorioProvider>
   );
 }
-
-export default App;

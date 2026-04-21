@@ -1,0 +1,218 @@
+$verde-ifms: #2f9e41;
+$vermelho-ifms: #cd191e;
+$cor-fundo: #ffffff;
+$cor-texto: #000000;
+$cor-branca: #ffffff;
+
+$font-base: 16px;
+$spacing: 1rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-base;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $cor-fundo;
+  color: $cor-texto;
+  line-height: 1.5;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  h1 {
+    color: $verde-ifms;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+.main-nav {
+  background-color: $verde-ifms;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    color: $cor-branca;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+.dias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+
+  .btn-dia {
+    background-color: $verde-ifms;
+    color: $cor-branca;
+    border: none;
+
+    width: 160px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: $cor-branca;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    border-bottom: 3px solid $verde-ifms;
+
+    h2 {
+      color: $verde-ifms;
+      font-size: 1.3rem;
+    }
+
+    .btn-fechar {
+      background-color: $vermelho-ifms;
+      color: $cor-branca;
+      border: none;
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.card-refeicao {
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid $verde-ifms;
+  border-radius: 8px;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  .card-info {
+    h3 {
+      color: $verde-ifms;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+  }
+
+  .card-acoes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .btn-fav {
+      border: 2px solid $cor-texto;
+      background: transparent;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+
+      &.active {
+        background-color: $cor-texto;
+        color: $cor-branca;
+      }
+    }
+
+    .link-favoritos {
+      background-color: $cor-texto;
+      color: $cor-branca;
+      text-align: center;
+      padding: 0.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  }
+}
